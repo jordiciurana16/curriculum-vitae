@@ -1,0 +1,35 @@
+/*EDUCATION MODULE*/
+
+/* Define the base styles for the .educationDiv */
+.educationDiv {
+    position: relative;
+    cursor: pointer;
+    background: white; /* Base background color */
+    overflow: hidden;
+    z-index: 0; /* Set a higher z-index to keep the text above the sliding background */
+    transition: background-color 0.3s ease; /* Add a transition for the background-color change on hover */
+  }
+
+  /* Define the pseudo-element that represents the yellow background */
+.educationDiv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start position, hidden to the left */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #f2f2f2, #f2f2f2); /* Yellow gradient, adjust colors if needed */
+    transition: left 0.3s ease; /* Transition the right property */
+    z-index: -1; /* Set a lower z-index to place the pseudo-element behind the content */
+}
+
+  /* Add styles on hover to reveal the yellow background from left to right */
+.educationDiv:hover::before {
+    left: 0; /* Reveal the yellow background */
+}
+
+.educationDiv:hover p,
+.educationDiv:hover h6 {
+    font-weight: bold; /* Make the text bold */
+    animation: textGradientAnimation 3s linear infinite; /* Apply the animation to the text gradient */
+}

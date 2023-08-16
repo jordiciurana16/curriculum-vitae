@@ -1,0 +1,24 @@
+/*SEPARATOR CSS MODULE*/
+
+/* Defines a thin line with a gray background color */
+.ThinLine {
+    width: 100%; /* Sets the width of the line to span the entire parent element */
+    height: 2px; /* Sets the height of the line to 2 pixels */
+    background-color: rgb(183, 183, 183); /* Sets the background color to a shade of gray */
+    position: relative; /* Positions the line relative to its normal position in the document flow */
+}
+
+/* Defines a thick line with specific positioning and transition properties */
+.ThickLine {
+    width: 3rem; /* Sets the width of the line to 3 rem units */
+    height: 150%; /* Sets the height of the line to 150% of its parent element's height */
+    position: absolute; /* Positions the line relative to its closest positioned ancestor */
+    top: 50%; /* Sets the top position to be centered vertically within its parent element */
+    transform: translate(0, -50%); /* Moves the line upwards by 50% of its own height to vertically center it */
+    transition: 0.5s ease; /* Adds a smooth transition effect over 0.5 seconds */
+}
+
+/* Defines a class to apply a gradual animation to the thick line */
+.ThickLineAnimation {
+    width: 100%; /* Sets the width to 100%, making the thick line span the entire parent element */
+}

@@ -1,0 +1,38 @@
+[
+    {
+      "degree": "Bachelor in Interactive Communication",
+      "institution": "Universitat Autònoma de Barcelona",
+      "year": "2020-2024",
+      "image": "https://i.ibb.co/j4gC8tJ/uab.png",
+      "link": "https://www.uab.cat/web/estudiar/ehea-degrees/general-information-1216708259085.html?param1=1345780069247",
+      "description": "The 4 years bachelor in Interactive Communication in Universitat Autònoma de Barcelona immerses you in the world of new technologies and digital communication. This program develops the skills needed to create interactive and exciting content in different areas, such as web and mobile applications, interfaces, videogames and augmented reality.",
+      "achievements":["Average grade of 7.31 out of 10","Erasmus program of 6 months in Florence"],
+      "knowledge":["Animation", "Audiovisual", "Big Data", "Computing", "Design", "Programming"],
+      "highlight": ["The 4 years","new technologies", "digital communication","7.31","Erasmus"]
+
+    },
+    {
+      "degree": "Certified in Front End Developer",
+      "institution": "Meta",
+      "year": "2022-2023",
+      "image": "https://i.ibb.co/R053R4x/meta.png",
+      "link": "https://www.coursera.org/professional-certificates/meta-front-end-developer",
+      "description": "The Front-End Developer course offered by Meta, on the Coursera educational platform, covers the knowledge needed to be a front-end web developer and takes approximately 7 months to complete. It consists of a total of 9 courses designed to cover the knowledge of web programming languages par excellence, with special emphasis on React and the creation of attractive user-centered interfaces.",
+      "achievements":["Average grade of the 9 courses of 9.05 out of 10"],
+      "knowledge":["HTML", "CSS", "JS", "React", "Object-Oriented Programming", "Figma", "UX", "UI", "Version Control"],
+      "highlight": ["7 months to complete", "9 courses", "9.05"]
+    },
+    {
+      "degree": "Audiovisual High School Diploma",
+      "institution": "Frederic Mistral - Tècnic Eulàlia",
+      "year": "2018 - 2020",
+      "image": "https://i.ibb.co/NV0QtZc/fundaciocollserola.png",
+      "link": "https://fredericmistral-tecniceulalia.cat/oferta-educativa/batxillerat/",
+      "description": "The 2 years Audiovisual High School at the Frederic Mistral - Tècnic Eulàlia school has allowed me to cultivate my passion for multiple creative fields that allowed me to appreciate, analyze and create immersive audiovisual content. Giving me that perspective that requires great attention to detail, narrative, artistic sensibility and a deep understanding of visual communication.",
+      "achievements":["Selected together with 14 people, out of 270 students at the school, to receive a public recognition assessing both my values and my academic results", "Cutoff score of 11.274 out of 14", "Delegate of my class"],
+      "knowledge":["Art", "Cinema", "Design", "Literature", "Narrative"],
+      "highlight": ["The 2 years","multiple creative fields","11.274","public recognition assessing both my values and my academic results"]
+
+
+    }
+]

@@ -1,0 +1,11 @@
+/* FOOTER CSS MODULE */
+
+/* Defines the style for the social icons container */
+.socialIcons a {
+    transition: all 0.2s ease-in-out; /* Applies a smooth transition effect to all CSS properties over 0.2 seconds */
+}
+
+/* Defines the style for the social icons on hover */
+.socialIcons a:hover {
+    transform: scale(1.2); /* Scales up the size of the social icons by 20% on hover */
+}

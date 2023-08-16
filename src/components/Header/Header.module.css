@@ -1,0 +1,32 @@
+/*HEADER CSS MODULE*/
+
+/* Styles for the photo frame container */
+.photoFrame {
+    display: flex; /* Displays its children elements in a flex container */
+    border: 20px solid #ffffff; /* Adds a white border of 20px around the photo frame */
+    margin-top: -30px; /* Moves the photo frame 30px upwards, overlapping the content above it */
+    margin-bottom: -30px; /* Moves the photo frame 30px downwards, overlapping the content below it */
+}
+
+/* Styles for the contact links container */
+.contactLinks {
+    position: relative; /* Positions the contact links relative to its normal position in the document flow */
+    display: inline-block; /* Displays the contact links as inline block elements */
+}
+
+/* Pseudo-element (::before) styles to create an underline animation on hover for contact links */
+.contactLinks::before {
+    content: ""; /* Inserts an empty content before the contact links */
+    position: absolute; /* Positions the pseudo-element relative to its closest positioned ancestor */
+    left: 0; /* Aligns the left edge of the pseudo-element with the left edge of the contact links container */
+    bottom: 0; /* Aligns the bottom edge of the pseudo-element with the bottom edge of the contact links container */
+    height: 2px; /* Sets the height of the pseudo-element to 2 pixels */
+    width: 0; /* Initially, the width of the pseudo-element is 0 (no underline) */
+    background-color: white; /* Sets the background color of the pseudo-element to white (creating the underline) */
+    transition: width 0.3s ease; /* Applies a smooth transition effect to the width property over 0.3 seconds */
+}
+
+/* Styles for the contact links container on hover (triggering the underline animation) */
+.contactLinks:hover::before {
+    width: 100%; /* Expands the width of the pseudo-element to 100% on hover (creating the underline animation) */
+}

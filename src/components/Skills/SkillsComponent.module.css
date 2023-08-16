@@ -1,0 +1,33 @@
+/* SkillsComponent.module.css */
+.skillsDiv {
+    position: relative;
+    cursor: pointer;
+    background: white;
+    overflow: hidden;
+    z-index: 0;
+    transition: background-color 0.3s ease;
+  
+    /* Add your other base styles here */
+  }
+  
+  .skillsDiv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #f2f2f2, #f2f2f2);
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+  
+  .skillsDiv:hover::before {
+    left: 0;
+  }
+  
+  /* Add styles for the hovered state */
+  .hovered::before {
+    left: 0;
+  }
+  

@@ -1,0 +1,42 @@
+[
+    {
+      "language": "Catalan",
+      "level": "Native",
+      "flag": "es-ct",
+      "description": "Being Catalan by birth, I have a deep-rooted connection with my language, culture, territory and traditions. Being Casteller de Sant Cugat has taught me to be more sociable and inclusive, relating to people of different conditions and ages. I feel very proud to be part of the Catalan community.",
+      "degree": "none",
+      "highlight": ["sociable and inclusive, relating to people of different conditions and ages"]
+    },
+    {
+      "language": "Spanish",
+      "level": "Native",
+      "flag": "es",
+      "description": "Being a native Spanish speaker has been a defining aspect of my personal and professional journey. I have a deep appreciation for Spanish history, literature and territory. The large number of people who speak this language has allowed me to share interesting and deep conversations with people very different from where I come from, which has given me empathy and tolerance.",
+      "degree": "none",
+      "highlight": ["deep conversations with people very different from where I come from", "empathy and tolerance"]
+    },
+    {
+      "language": "English",
+      "level": "Advanced",
+      "flag": "gb",
+      "description": "I have been in contact with the English language since childhood, an initiative of my mother, an English teacher. I went to York for a month to study and immerse myself living with a family. I have achieved a high level of English thanks to my english school program with Cambridge, watching audiovisual content in original version and through the world of programming, where English is vital.",
+      "degree": "B2",
+      "highlight":["I went to York for a month to study and immerse myself living with a family"]
+    },
+    {
+      "language": "Italian",
+      "level": "Intermediate",
+      "flag": "it",
+      "description": "I possess a strong passion for Italian history and culture, which has fueled my determination to learn self-taught the Italian language enabling me to communicate confidently and fluently. Taking my commitment further, I embarked on a six-month Erasmus program in Florence, where I fully immersed myself in the language and local way of life.",
+      "degree": "C1",
+      "highlight": ["learn self-taught", "I embarked on a six-month Erasmus program in Florence"]
+    },
+    {
+      "language": "French",
+      "level": "Basic",
+      "flag": "fr",
+      "description": "I have a basic knowledge of French, I studied it in school for 4 years. I can defend myself but I can not hold a fluent conversation. In addition, I have a residence in the Pyrenees, so I am in contact with this language and culture due to hikes and bicycle routes I do in the French Pyrenees.",
+      "degree": "none",
+      "highlight": ["I studied it in school for 4 years","I am in contact with this language"]
+    }
+]

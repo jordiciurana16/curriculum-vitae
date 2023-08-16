@@ -1,0 +1,27 @@
+/*LANGUAGES CSS MODULE*/
+
+/* Defines a flex container to display the list of languages horizontally */
+.languagesList {
+    display: flex;
+    align-items: center;
+}
+
+/* Applies a scale transformation to the child element with class "flagIcons" on hover */
+.languagesList:hover .flagIcons {
+    transform: scale(1.4); /* Increases flag size by 40% on hover */
+}
+
+/* Applies bold font-weight to the child element with class "languageText" on hover */
+.languagesList:hover .languageText {
+    font-weight: bold; /* Makes the text bold on hover */
+}
+
+/* Changes the cursor to indicate the element is clickable on hover */
+.languagesList:hover {
+    cursor: pointer;
+}
+
+/* Adds left margin to the child element with class "languageText" */
+.languagesList .languageText {
+    margin-left: 10px; /* Separates the text from the flag by adding 10px left margin */
+}
