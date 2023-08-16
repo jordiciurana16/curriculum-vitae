@@ -31,3 +31,13 @@
     left: 0;
   }
   
+
+  .projectsLink {
+    text-decoration: none; /* Remove the initial underline decoration */
+    transition: border-bottom 0.2s; /* Add a transition effect for the underline */
+  }
+  
+  .projectsLink:hover {
+    border-bottom: 2px solid underline; /* Add a solid underline on hover */
+    text-decoration: underline; /* Underline the text on hover */
+  }

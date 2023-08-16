@@ -71,10 +71,10 @@ const EducationModal = ({ education, onClose }) => {
         </div>
       </div>
       <div className='card-footer d-flex justify-content-end'>
-        <p className={`mb-0 ${styles.certificate}`}>
+        <p className={`mb-0 ${styles.certificateLink}`}>
           {/* Anchor the image to education.link */}
-          <a className='text-black' href={pdfUrl} target='_blank' rel='noopener noreferrer'>
-            See certificate
+          <a className='text-black text-decoration-none' href={pdfUrl} target='_blank' rel='noopener noreferrer'>
+            Certificate
           </a>
         </p>
       </div>

@@ -33,13 +33,16 @@
   transform: scale(1.2); /* Increases the icon size by 20% on hover */
 }
 
-.certificate {
-  position: relative; /* Positions the degree link relative to its normal position in the document flow */
-  display: inline-block; /* Displays the link as an inline block element */
-  transform: scale(1); /* Sets the initial size of the degree link */
-  text-decoration: underline; /*Applies an underlined to the text*/
+/* Styling for the certificate link */
+.certificateLink {
+  position: relative;
+  display: inline-block;
+  transform: scale(1);
+  text-decoration: none; /* Remove the initial underline decoration */
+  transition: border-bottom 0.2s, text-decoration 0.2s; /* Add a transition effect for the underline and text-decoration */
 }
 
-.certificate:hover {
-  font-weight: bold; /* Applies bold font-weight to the text of the degree link on hover */
+.certificateLink:hover {
+  border-bottom: 2px solid underline; /* Add a solid underline on hover */
+  text-decoration: underline; /* Underline the text on hover */
 }
