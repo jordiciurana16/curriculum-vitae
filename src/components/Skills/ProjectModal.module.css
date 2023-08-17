@@ -1,0 +1,28 @@
+/*PROJECTS MODAL CSS MODULE*/
+
+/* Styles for the language modal */
+.projectsModal {
+    position: fixed; /* Fixes the modal's position relative to the viewport */
+    top: 50%; /* Positions the top edge of the modal at the vertical center of the viewport */
+    left: 50%; /* Positions the left edge of the modal at the horizontal center of the viewport */
+    transform: translate(-50%, -50%); /* Centers the modal both vertically and horizontally using negative translations */
+    z-index: 1; /* Sets the stacking order of the modal to make sure it appears above other elements */
+    
+    /* Sets fixed dimensions for the modal */
+    width: 50%; /* Sets the width of the modal to 50% of its parent element's width */
+    height: 70%; /* Sets the height of the modal to 45% of its parent element's height */
+  }
+  
+  /* Cross icon for closing the modal */
+  .closeModal {
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    transition: transform 0.2s; /* Applies a smooth transition effect on the "transform" property over 0.2 seconds */
+  }
+  
+  .closeModal:hover {
+    transform: scale(1.2); /* Increases the icon size by 20% on hover */
+  }
+
+
+
+
