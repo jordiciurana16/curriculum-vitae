@@ -7,6 +7,7 @@ const Experience = () => {
 
   return (
     <div
+      className='mt-2'
       onMouseEnter={() => setExpanded(true)}
       onMouseLeave={() => setExpanded(false)}
     >

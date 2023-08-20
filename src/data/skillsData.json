@@ -1,7 +1,7 @@
 [
   {
     "skill": "Graphic Designer",
-    "description": "Highly skilled and versatile graphic designer with extensive knowledge and proficiency in a wide array of design softwares such as Illustrator, Photoshop, InDesign, AfterEffects, Premiere Pro, Blender, Figma, and other. With a strong foundation in design, photography and animation, I am committed to delivering visual experiences and effectively translating clients' visions into captivating designs.",
+    "description": "Highly skilled and versatile graphic designer with a strong foundation in design, photography and animation. I have extensive knowledge and proficiency in a wide array of design softwares such as Illustrator, Photoshop, InDesign, AfterEffects, Premiere Pro, Blender, Figma, and other.",
     "highlight": ["Illustrator", "Photoshop", "InDesign", "AfterEffects", "Premiere Pro", "Blender", "Figma"],
     "projects": [
       {
@@ -18,7 +18,7 @@
   },
   {
     "skill": "Front-End Developer",
-    "description": "Deep understanding of the front-end web development landscape. Proficient in HTML, CSS, JavaScript, and various front-end frameworks such as Bootstrap and React. Passionate about creating an exceptional UX through innovative and UI web applications. Strong collaboration and problem-solving abilities, coupled with a keen eye for design aesthetics. Committed to staying up-to-date with industry trends and continuously expanding technical skills.",
+    "description": "Deep understanding of the front-end web development landscape. Proficient in HTML, CSS, JavaScript, and various front-end frameworks such as Bootstrap and React. Passionate about creating an exceptional UX through innovative and UI web applications, coupled with a keen eye for design aesthetics.",
     "highlight": ["HTML", "CSS", "JavaScript", "Bootstrap", "React", "UX", "UI" ],
     "projects": [
       {
@@ -35,7 +35,7 @@
   },
   {
     "skill": "Data Management",
-    "description": "A comprehensive skill set allows me to navigate the complexities of data management. Through my knowledge in designing, implementing and optimizing database systems and organizing, maintaining large amounts of information accurately in Excel and programming languages such as Python, PHP and MySql. Additionally, I am capable of interpreting and presenting it with Tableau to drive business through digital marketing strategies where I can contribute to optimizing marketing campaigns improving overall business performance.",
+    "description": "Maintaining large amounts of information accurately in Excel and programming languages such as Python, PHP and MySql. Additionally, I am capable of interpreting and presenting it with Tableau to drive business through digital marketing strategies where I can contribute to optimizing marketing campaigns.",
     "highlight": ["Python", "PHP", "MySql", "Tableau", "Excel"],
     "projects": [
       {
