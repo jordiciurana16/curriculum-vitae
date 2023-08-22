@@ -1,34 +1,39 @@
 [
   {
-    "skill": "Graphic Designer",
+    "skill": "Graphic Design",
     "description": "Highly skilled and versatile graphic designer with a strong foundation in design, photography and animation. I have extensive knowledge and proficiency in a wide array of design softwares such as Illustrator, Photoshop, InDesign, AfterEffects, Premiere Pro, Blender, Figma, and other.",
     "highlight": ["Illustrator", "Photoshop", "InDesign", "AfterEffects", "Premiere Pro", "Blender", "Figma"],
     "projects": [
       {
         "title": "Video Game Review",
-        "description": "Created a review video of Pokémon FireRed. Created for a university subject with Premiere Pro and Photoshop.",
+        "description": "Created a review video of Pokémon FireRed for a university subject with Premiere Pro and Photoshop.",
         "link": "https://www.youtube.com/watch?v=lG1DpaNo_Zw&t=178s"
       },
       {
         "title": "Trail T-Shirt Design",
         "description": "Designed and produced a trail running t-shirts for Club Muntanyenc Sant Cugat with Illustrator.",
-        "link": "https://github.com/jordiciurana16/curriculum-vitae/blob/main/public/projects/Disseny%20i%20producci%C3%B3%20de%20la%20samarreta%20t%C3%A8cnica.pdf"
+        "link": "/curriculum-vitae/public/projects/Disseny%20i%20producció%20de%20la%20samarreta%20tècnica.pdf"
       }
     ]
   },
   {
-    "skill": "Front-End Developer",
+    "skill": "Front-End Developement",
     "description": "Deep understanding of the front-end web development landscape. Proficient in HTML, CSS, JavaScript, and various front-end frameworks such as Bootstrap and React. Passionate about creating an exceptional UX through innovative and UI web applications, coupled with a keen eye for design aesthetics.",
     "highlight": ["HTML", "CSS", "JavaScript", "Bootstrap", "React", "UX", "UI" ],
     "projects": [
       {
-        "title": "E-Commerce Website",
-        "description": "Developed a responsive e-commerce website using React and integrated payment gateways for seamless transactions.",
-        "link": "https://www.youtube.com/watch?v=lG1DpaNo_Zw&t=178s"
+        "title": "Tic Tac Toe Game",
+        "description": "Developed a responsive Tic Tac Toe game for practicing vanilla CSS and JS.",
+        "link": "https://jordiciurana16.github.io/Tic-Tac-Toe/"
       },
       {
         "title": "Portfolio Website",
-        "description": "Designed and coded a personal portfolio website to showcase projects and skills.",
+        "description": "Designed and coded a personal portfolio website with CSS, JS, Bootstrap and React.",
+        "link": "https://www.youtube.com/watch?v=lG1DpaNo_Zw&t=178s"
+      },
+      {
+        "title": "Restaurant Website",
+        "description": "Developed a restaurant website to practice React, UI and UX in depth.",
         "link": "https://www.youtube.com/watch?v=lG1DpaNo_Zw&t=178s"
       }
     ]

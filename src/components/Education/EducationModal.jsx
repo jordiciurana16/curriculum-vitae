@@ -23,7 +23,7 @@ const EducationModal = ({ education, onClose }) => {
     return highlightedAchievements;
   };
 
-  const pdfUrl = `./public/titles/education/${education.degree}.pdf`;
+  const pdfUrl = `/curriculum-vitae/public/titles/education/${education.degree}.pdf`;
 
   return (
     <div className={`${styles.languageModal} card`}>

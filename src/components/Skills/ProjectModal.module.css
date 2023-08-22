@@ -9,7 +9,7 @@
     z-index: 1; /* Sets the stacking order of the modal to make sure it appears above other elements */
     
     /* Sets fixed dimensions for the modal */
-    width: 50%; /* Sets the width of the modal to 50% of its parent element's width */
+    width: 70%; /* Sets the width of the modal to 50% of its parent element's width */
     height: 70%; /* Sets the height of the modal to 45% of its parent element's height */
   }
   
@@ -23,6 +23,11 @@
     transform: scale(1.2); /* Increases the icon size by 20% on hover */
   }
 
-
-
-
+  .titleLink {
+    text-decoration: none;
+  }
+  
+  .titleLink:hover {
+    text-decoration: underline;
+  }
+  

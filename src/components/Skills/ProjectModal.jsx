@@ -25,8 +25,8 @@ const ProjectModal = ({ project, onClose }) => {
     {project.projects.map((project, index) => (
       <li key={index}>
         {/* Render the title as a link */}
-        <h5>
-          <a href={project.link} target='_blank' rel='noopener noreferrer'>
+        <h5 >
+          <a href={project.link} target='_blank' rel='noopener noreferrer'className={`${styles.titleLink} text-black `}>
             {project.title}
           </a>
         </h5>

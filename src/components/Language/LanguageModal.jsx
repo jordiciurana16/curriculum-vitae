@@ -19,7 +19,7 @@ const LanguageModal = ({ language, onClose }) => {
 
   const showDegreeLine = language.degree !== 'none';   // Determine whether to show the degree line or not
 
-  const pdfUrl = `./public/titles/language/${language.language}${language.degree}.pdf`;
+  const pdfUrl = `/curriculum-vitae/public/titles/language/${language.language}${language.degree}.pdf`;
 
   return (
     <div className={`${styles.languageModal} card`}>
