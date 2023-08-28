@@ -23,7 +23,7 @@ const EducationModal = ({ education, onClose }) => {
     return highlightedAchievements;
   };
 
-  const pdfUrl = `https://jordiciurana16.github.io/curriculum-vitae/public/titles/education/${education.degree}.pdf`;
+  const pdfUrl = `curriculum-vitae/titles/education/${education.degree}.pdf`;
 
   return (
     <div className={`${styles.languageModal} card`}>
@@ -57,7 +57,7 @@ const EducationModal = ({ education, onClose }) => {
         </div>
         <div className='row'>
           <div className='col'>
-            <p className='mb-3'>Significant accomplishments  plis work:</p>
+            <p className='mb-3'>Significant accomplishments:</p>
             <ul>
               {/* Highlight the achievements */}
               {highlightAchievements(education.achievements, education.highlight).map((achievement, index) => (

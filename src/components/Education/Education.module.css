@@ -10,6 +10,15 @@
     transition: background-color 0.3s ease; /* Add a transition for the background-color change on hover */
   }
 
+  .a4EducationDiv {
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(114, 25, 25); /* Base background color */
+    overflow: hidden;
+    z-index: 0; /* Set a higher z-index to keep the text above the sliding background */
+    transition: background-color 0.3s ease; /* Add a transition for the background-color change on hover */
+  }
+
   /* Define the pseudo-element that represents the yellow background */
 .educationDiv::before {
     content: '';
@@ -33,3 +42,4 @@
     font-weight: bold; /* Make the text bold */
     animation: textGradientAnimation 3s linear infinite; /* Apply the animation to the text gradient */
 }
+

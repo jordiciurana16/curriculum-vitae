@@ -49,10 +49,10 @@ const Education = () => {
         {educationData.map((education, index) => (
           <React.Fragment key={index}>
             {/* Use handleEducationClick function */}
-            <div className={`${styles.educationDiv} pt-2 ps-2 rounded`}
+            <div className={`ps-2 pt-1 ${styles.educationDiv} rounded`}
               onClick={() => handleEducationClick(education)}
             >
-              <h6 className='pb-2'>{education.degree}</h6>
+              <p className='bold'>{education.degree}</p>
               <p>{education.institution}</p>
               <p>{education.year}</p>
             </div>

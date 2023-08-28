@@ -20,14 +20,23 @@ p {
   z-index: 1; /* Sets the stacking order of the overlay to appear above other elements */
 }
 
-/* index.css */
+.bold{
+  font-weight: bold;
+}
+
+
+hr {
+  margin: 5px 0 5px 0; /* top right bottom left */
+}
+
+
 
 /* A4 format dimensions */
 .a4-format {
   width: 210mm; /* A4 width */
   height: 297mm; /* A4 height */
   margin: 0 auto; /* Center the content on the page */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.358); /* Add a shadow effect */
   overflow: hidden; /* Hide overflowing content */
 }
 
@@ -36,10 +45,37 @@ p {
   font-size: 10pt;
 }
 
+
+/*A4 FORMAT STYLING*/
+
 /* Update the padding for better spacing on A4 format */
 .a4-format .content-padding {
-  padding-left: 20mm;
-  padding-right: 20mm;
+  padding-left: 11mm;
+  padding-right: 11mm;
 }
 
+/*General rules*/
 
+.a4-format h1 {
+  font-size: 2.6rem;
+}
+
+.a4-format h2 {
+  font-size: 1.2rem;
+}
+
+.a4-format h6 {
+  font-size: 0.8rem;
+}
+
+.a4-format p {
+  font-size: 0.8rem;
+}
+
+.a4-format span {
+  font-size: 0.75rem;
+}
+
+.a4-format hr {
+  margin: 5px 0 5px 0; /* top right bottom left */
+}

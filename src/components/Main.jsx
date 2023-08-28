@@ -3,21 +3,37 @@ import AboutMe from './AboutMe';
 import Education from './Education/Education';
 import Languages from './Language/Languages';
 import Skills from './Skills/Skills';
-import Experience from './Experience';
+import Experience from './Experience/Experience';
 
-const Main = () => {
+const Main = ({ isA4Format }) => {
   return (
-    <main className="content-padding mt-5 mb-3 ">
+    <main className={`content-padding mb-3 ${isA4Format ? 'mt-4' : 'mt-5'}`}>
       <div className="container">
         <div className="row">
-          <div className="col-4 pe-3">
+          <div className={`${isA4Format ? 'col-4 pe-3 pt-1' : 'col-5 pe-3'}`}>
             <AboutMe />
-            <Education />
-            <Languages />
+            {isA4Format ? (
+              <Skills isA4Format={isA4Format} />
+            ) : (
+              <>
+                <Education />
+                <Languages />
+              </>
+            )}
           </div>
-          <div className="col-8 ps-5">
-            <Skills />
-            <Experience />
+          <div className={` ${isA4Format ? 'col-8 ps-4 pt-1' : 'col-7 ps-5'}`}>
+            {isA4Format ? (
+              <>
+                <Education />
+                <Experience />
+                <Languages />
+              </>
+            ) : (
+              <>
+               <Skills isA4Format={isA4Format} />
+                <Experience />
+              </>
+            )}
           </div>
         </div>
       </div>

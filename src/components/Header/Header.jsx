@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './Header.module.css'
 import { BsEnvelopeFill, BsFillTelephoneFill, BsFillGeoAltFill, BsGlobe2 , BsFillClipboardCheckFill} from 'react-icons/bs';
 
-const Header = () => {
+const Header = ({isA4Format}) => {
   const [copySuccess, setCopySuccess] = useState(false);
 
   // Copy to clipboard
@@ -18,54 +18,54 @@ const Header = () => {
 
 
   return (
-    <header>
+    <header className={`${isA4Format ? 'pt-4' : ''}`}>
       <div className='bg-dark d-flex align-items-center content-padding'>
-        <div className={`${styles.photoFrame} rounded-circle`}>
+        <div className={` ${isA4Format ? styles.a4PhotoFrame : styles.photoFrame} rounded-circle`}>
           <img
             src="https://via.placeholder.com/175"
             alt="CV Photo"
-            className="rounded-circle"
+            className={` ${isA4Format ? styles.a4Image : ''} rounded-circle`}
           />
         </div>
         <div className="text-center container">
-          <div className="row mb-2">
+          <div className={`row ${isA4Format ? 'pt-2' : 'pb-2'}`}>
             <h1 className="text-white display-4">Jordi Ciurana Sales</h1>
           </div>
-          <div className="row">
-            <div className="contact-section d-flex text-white justify-content-center">
-              <div className={`${styles.contactLinks} contact-item me-3`} onClick={() => copyToClipboard('jciuranas@gmail.com', 'email')}>
+          <div className={`row ${isA4Format ? 'pb-2' : ''}`}>
+            <div className="contact-section d-flex text-white justify-content-between">
+              <div className={`${styles.contactLinks} contact-item ${isA4Format ? 'me-1' : 'me-3'}`} onClick={() => copyToClipboard('jciuranas@gmail.com', 'email')}>
                 <span>
-                  <BsEnvelopeFill className='me-2'/>
+                  <BsEnvelopeFill className={`${isA4Format ? 'me-1' : 'me-3'}`}/>
                   jciuranas@gmail.com
                 </span>
               </div>
-              <div className={`${styles.contactLinks} contact-item me-3 pb-2`} onClick={() => copyToClipboard('638 248 787', 'telephone')}>
+              <div className={`${styles.contactLinks} contact-item pb-2 ${isA4Format ? 'me-1' : 'me-3'}`} onClick={() => copyToClipboard('638 248 787', 'telephone')}>
                 <span>
-                  <BsFillTelephoneFill className='me-2'/>
+                  <BsFillTelephoneFill className={`${isA4Format ? 'me-1' : 'me-2'}`}/>
                   638 248 787
                 </span>
               </div>
-              <div className={`${styles.contactLinks} contact-item me-3`}>
+              <div className={`${styles.contactLinks} contact-item ${isA4Format ? 'me-1' : 'me-3'}`}>
               <span>
                   <a
                     href="https://www.google.es/maps/place/Sant+Cugat+del+Vall%C3%A8s,+Barcelona/@41.4755648,2.0316823,13z/data=!4m6!3m5!1s0x12a496c2a6d57035:0xb16124d430411319!8m2!3d41.4720702!4d2.0865154!16s%2Fg%2F11cn638mkm?entry=ttu"
                     target="_blank"
                     className="text-decoration-none text-white"
                   >
-                    <BsFillGeoAltFill className='me-2'/>
+                    <BsFillGeoAltFill className={`${isA4Format ? 'me-1' : 'me-3'}`}/>
                     Sant Cugat del Vallès
                   </a>
                 </span>
               </div>
-              <div className={`${styles.contactLinks} contact-item me-3`}>
+              <div className={`${styles.contactLinks} contact-item ${isA4Format ? 'me-1' : 'me-3'}`}>
                 <span>
                   <a
                     href="https://jordiciurana16.github.io"
                     target="_blank"
                     className="text-decoration-none text-white"
                   >
-                    <BsGlobe2 className='me-2 underline-on-hover'/>
-                    www.jordiciurana16.github.io
+                    <BsGlobe2 className={`${isA4Format ? 'me-1' : 'me-3'} underline-on-hover`}/>
+                    www.jordiciurana16.com
                   </a>
                 </span>
               </div>
@@ -92,9 +92,7 @@ const Header = () => {
             </div>
           )}
         </div>
-
       </div>
-
     </header>
   );
 };

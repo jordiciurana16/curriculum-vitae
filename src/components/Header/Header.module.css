@@ -30,3 +30,17 @@
 .contactLinks:hover::before {
     width: 100%; /* Expands the width of the pseudo-element to 100% on hover (creating the underline animation) */
 }
+
+/* Other styles */
+
+.a4PhotoFrame {
+  display: flex; /* Displays its children elements in a flex container */
+  border: 15px solid #ffffff; /* Adds a white border of 20px around the photo frame */
+  margin-top: -30px; /* Moves the photo frame 30px upwards, overlapping the content above it */
+  margin-bottom: -30px; /* Moves the photo frame 30px downwards, overlapping the content below it */
+}
+
+.a4Image {
+  max-width: 125px; /* Set the maximum width you want for the image */
+  max-height: 125px; /* Set the maximum height you want for the image */
+}

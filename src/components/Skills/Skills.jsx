@@ -2,17 +2,17 @@ import React, { useState, useEffect } from 'react';
 import skillsData from '../../data/skillsData.json';
 import Separator from '../Separator/Separator';
 import styles from './Skills.module.css';
-import ProjectModal from './ProjectModal'; // Import the ProjectModal component
+import ProjectModal from './ProjectModal';
 
-const Skills = () => {
+const Skills = ({ isA4Format }) => {
   const [isExpanded, setExpanded] = useState(false);
   const [hoveredSkill, setHoveredSkill] = useState(null);
-  const [selectedSkill, setSelectedSkill] = useState(null); // Add state for the selected skill
+  const [selectedSkill, setSelectedSkill] = useState(null);
   const [showOverlay, setShowOverlay] = useState(false);
 
   const highlightWords = (text, highlightedWords) => {
     let highlightedText = text;
-    highlightedWords.forEach(word => {
+    highlightedWords.forEach((word) => {
       const pattern = new RegExp(`\\b(${word})\\b`, 'gi');
       highlightedText = highlightedText.replace(pattern, `<strong>${word}</strong>`);
     });
@@ -22,16 +22,13 @@ const Skills = () => {
   const handleOpenModal = (skill) => {
     setSelectedSkill(skill);
     setShowOverlay(true);
-
   };
 
   const handleCloseModal = () => {
     setSelectedSkill(null);
     setShowOverlay(false);
-
   };
 
-  // Add event listener to close the modal when clicked outside
   useEffect(() => {
     const handleOverlayClick = (event) => {
       if (event.target.classList.contains('overlay')) {
@@ -50,46 +47,46 @@ const Skills = () => {
 
   return (
     <>
-      {/* Overlay */}
       {showOverlay && <div className='overlay'></div>}
-      <div
-        onMouseEnter={() => setExpanded(true)}
-        onMouseLeave={() => setExpanded(false)}
-      >
+      <div onMouseEnter={() => setExpanded(true)} onMouseLeave={() => setExpanded(false)}>
         <h2>SKILLS</h2>
         <Separator expanded={isExpanded} />
 
         {skillsData.map((skills, index) => (
           <React.Fragment key={index}>
             <div
-              className={`rounded pt-2 ps-2 pe-2 ${styles.skillsDiv} ${hoveredSkill === skills.skill ? styles.hovered : ''}`}
+              className={`rounded pt-1 ps-2 pe-2 ${styles.skillsDiv} ${
+                hoveredSkill === skills.skill ? styles.hovered : ''
+              }`}
               onMouseEnter={() => setHoveredSkill(skills.skill)}
               onMouseLeave={() => setHoveredSkill(null)}
+              onClick={() => handleOpenModal(skills)}
             >
-              <div className="d-flex justify-content-between align-items-center">
-              <h6>{skills.skill.toUpperCase()}</h6>
-                <a
-                  href="#projects"
-                  className={`text-black ${styles.projectsLink}`}
-                  onClick={() => handleOpenModal(skills)}
-                >
-                  Projects
-                </a>
+              <div className='d-flex justify-content-between align-items-center'>
+                <h6>{skills.skill.toUpperCase()}</h6>
               </div>
-              <p
-                className='mt-2'
-                dangerouslySetInnerHTML={{
-                  __html: hoveredSkill === skills.skill
-                    ? highlightWords(skills.description, skills.highlight)
-                    : skills.description
-                }}
-              />
+              {isA4Format ? (
+                <ul>
+                  {skills.highlight.map((item, index) => (
+                    <li className='mb-1' key={index}>{item}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p
+                  className='mt-2'
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      hoveredSkill === skills.skill
+                        ? highlightWords(skills.description, skills.highlight)
+                        : skills.description,
+                  }}
+                />
+              )}
             </div>
-            {index !== skillsData.length - 1 && <hr className="skills-divider" />}
+            {!isA4Format && index !== skillsData.length - 1 && <hr className='skills-divider' />}
           </React.Fragment>
         ))}
 
-        {/* Render the ProjectModal when a skill is selected */}
         {selectedSkill && (
           <ProjectModal project={selectedSkill} onClose={handleCloseModal} />
         )}

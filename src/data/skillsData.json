@@ -1,7 +1,7 @@
 [
   {
     "skill": "Graphic Design",
-    "description": "Highly skilled and versatile graphic designer with a strong foundation in design, photography and animation. I have extensive knowledge and proficiency in a wide array of design softwares such as Illustrator, Photoshop, InDesign, AfterEffects, Premiere Pro, Blender, Figma, and other.",
+    "description": "Versatile graphic designer with a strong foundation in design, photography and animation. I have extensive knowledge and proficiency in a wide array of design softwares such as Illustrator, Photoshop, InDesign, AfterEffects, Premiere Pro, Blender, Figma, and other.",
     "highlight": ["Illustrator", "Photoshop", "InDesign", "AfterEffects", "Premiere Pro", "Blender", "Figma"],
     "projects": [
       {
@@ -12,7 +12,7 @@
       {
         "title": "Trail T-Shirt Design",
         "description": "Designed and produced a trail running t-shirts for Club Muntanyenc Sant Cugat with Illustrator.",
-        "link": "/curriculum-vitae/public/projects/Disseny%20i%20producció%20de%20la%20samarreta%20tècnica.pdf"
+        "link": "/curriculum-vitae/projects/Disseny%20i%20producció%20de%20la%20samarreta%20tècnica.pdf"
       }
     ]
   },

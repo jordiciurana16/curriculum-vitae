@@ -47,7 +47,7 @@ const Languages = () => {
 
         <ul className='list-unstyled pt-1'>
           {languageData.map((language, index) => (
-            <li className={`mb-3 ${styles.languagesList}`} key={index} onClick={() => handleLanguageClick(language)}>
+            <li className={`ms-1 mb-4 ${styles.languagesList}`} key={index} onClick={() => handleLanguageClick(language)}>
               <div>
                 <span className={`${styles.flagIcons} fi fi-${language.flag} me-2`}></span>
               </div>

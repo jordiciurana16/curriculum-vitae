@@ -10,9 +10,9 @@ function App() {
   return (
     <div>
       <Buttons isA4Format={isA4Format} setIsA4Format={setIsA4Format} />
-      <div className={isA4Format ? 'a4-format' : ''}>
-        <Header />
-        <Main />
+      <div className={isA4Format ? 'a4-format mb-5' : ''}>
+        <Header isA4Format={isA4Format} />
+        <Main isA4Format={isA4Format} />
         <Footer />
       </div>
     </div>
