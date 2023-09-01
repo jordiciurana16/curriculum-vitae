@@ -25,3 +25,8 @@
 .languagesList .languageText {
     margin-left: 10px; /* Separates the text from the flag by adding 10px left margin */
 }
+
+.a4LanguageText {
+    font-size: 1rem
+}
+

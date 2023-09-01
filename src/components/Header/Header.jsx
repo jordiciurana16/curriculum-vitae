@@ -18,7 +18,7 @@ const Header = ({isA4Format}) => {
 
 
   return (
-    <header className={`${isA4Format ? 'pt-4' : ''}`}>
+    <header className={`${isA4Format ? 'pt-4 mt-1' : ''}`}>
       <div className='bg-dark d-flex align-items-center content-padding'>
         <div className={` ${isA4Format ? styles.a4PhotoFrame : styles.photoFrame} rounded-circle`}>
           <img
@@ -33,19 +33,19 @@ const Header = ({isA4Format}) => {
           </div>
           <div className={`row ${isA4Format ? 'pb-2' : ''}`}>
             <div className="contact-section d-flex text-white justify-content-between">
-              <div className={`${styles.contactLinks} contact-item ${isA4Format ? 'me-1' : 'me-3'}`} onClick={() => copyToClipboard('jciuranas@gmail.com', 'email')}>
+              <div className={`contact-item ${isA4Format ? `me-1 ${styles.contactLinks}` : 'me-3'}`} onClick={() => copyToClipboard('jciuranas@gmail.com', 'email')}>
                 <span>
                   <BsEnvelopeFill className={`${isA4Format ? 'me-1' : 'me-3'}`}/>
                   jciuranas@gmail.com
                 </span>
               </div>
-              <div className={`${styles.contactLinks} contact-item pb-2 ${isA4Format ? 'me-1' : 'me-3'}`} onClick={() => copyToClipboard('638 248 787', 'telephone')}>
-                <span>
+               <div className={`contact-item ${isA4Format ? `${styles.contactLinks} me-1` : 'me-3'}`}onClick={() => copyToClipboard('638 248 787', 'telephone')}>
+              <span>
                   <BsFillTelephoneFill className={`${isA4Format ? 'me-1' : 'me-2'}`}/>
                   638 248 787
                 </span>
               </div>
-              <div className={`${styles.contactLinks} contact-item ${isA4Format ? 'me-1' : 'me-3'}`}>
+              <div className={`contact-item ${isA4Format ? `me-1 ${styles.contactLinks}` : 'me-3'}`}>
               <span>
                   <a
                     href="https://www.google.es/maps/place/Sant+Cugat+del+Vall%C3%A8s,+Barcelona/@41.4755648,2.0316823,13z/data=!4m6!3m5!1s0x12a496c2a6d57035:0xb16124d430411319!8m2!3d41.4720702!4d2.0865154!16s%2Fg%2F11cn638mkm?entry=ttu"
@@ -57,8 +57,8 @@ const Header = ({isA4Format}) => {
                   </a>
                 </span>
               </div>
-              <div className={`${styles.contactLinks} contact-item ${isA4Format ? 'me-1' : 'me-3'}`}>
-                <span>
+               <div className={`contact-item ${isA4Format ? `me-1 ${styles.contactLinks}` : 'me-3'}`}>
+              <span>
                   <a
                     href="https://jordiciurana16.github.io"
                     target="_blank"

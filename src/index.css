@@ -1,3 +1,4 @@
+
 /* Adds horizontal padding to the elements with class "content-padding" */
 .content-padding {
   padding-left: 10%;
@@ -20,16 +21,19 @@ p {
   z-index: 1; /* Sets the stacking order of the overlay to appear above other elements */
 }
 
-.bold{
+.bolder{
   font-weight: bold;
 }
 
 
 hr {
-  margin: 5px 0 5px 0; /* top right bottom left */
+  margin: 3px 0 3px 0; /* top right bottom left */
 }
 
-
+h4 {
+  font-size: 1rem;
+  margin-bottom: -1px;
+}
 
 /* A4 format dimensions */
 .a4-format {
@@ -38,11 +42,6 @@ hr {
   margin: 0 auto; /* Center the content on the page */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.358); /* Add a shadow effect */
   overflow: hidden; /* Hide overflowing content */
-}
-
-/* Set the font size to 10pt for better fitting on A4 format */
-.a4-format p {
-  font-size: 10pt;
 }
 
 
@@ -57,25 +56,38 @@ hr {
 /*General rules*/
 
 .a4-format h1 {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
 }
 
 .a4-format h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .a4-format h6 {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
 
 .a4-format p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
-.a4-format span {
-  font-size: 0.75rem;
+.a4-format li {
+  font-size: 0.9rem;
+}
+
+.a4-format h4 {
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+}
+
+.a4-format h5 {
+  font-size: 0.9rem;
 }
 
 .a4-format hr {
   margin: 5px 0 5px 0; /* top right bottom left */
+}
+
+.disable-interactions {
+  pointer-events: none;
 }

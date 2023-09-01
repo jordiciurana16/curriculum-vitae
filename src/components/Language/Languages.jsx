@@ -4,7 +4,7 @@ import Separator from '../Separator/Separator';
 import LanguageModal from './LanguageModal';
 import languageData from '../../data/languageData.json';
 
-const Languages = () => {
+const Languages = ({ isA4Format }) => {
   const [isExpanded, setExpanded] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(null);
   const [showOverlay, setShowOverlay] = useState(false);
@@ -45,19 +45,29 @@ const Languages = () => {
         <h2>LANGUAGES</h2>
         <Separator expanded={isExpanded} />
 
-        <ul className='list-unstyled pt-1'>
+        {/* Bootstrap grid row */}
+        <div className="row">
           {languageData.map((language, index) => (
-            <li className={`ms-1 mb-4 ${styles.languagesList}`} key={index} onClick={() => handleLanguageClick(language)}>
+            // Bootstrap grid columns based on isA4Format
+            <div
+              className={`${
+                isA4Format ? 'col-6' : 'col-12'
+              } mb-2 ${styles.languagesList}`}
+              key={index}
+              onClick={() => handleLanguageClick(language)}
+            >
               <div>
-                <span className={`${styles.flagIcons} fi fi-${language.flag} me-2`}></span>
+                <span
+                  className={`${isA4Format ? 'me-2' : 'me-2'} ${styles.flagIcons} fi fi-${language.flag} `}
+                ></span>
               </div>
-              <span className={styles.languageText}>{language.language} ({language.level})</span>
-            </li>
+              <span className={` ${isA4Format ? styles.a4LanguageText : styles.languageText}`}>
+                {language.language} ({language.level})
+              </span>
+            </div>
           ))}
-        </ul>
-        {selectedLanguage && (
-          <LanguageModal language={selectedLanguage} onClose={handleCloseModal} />
-        )}
+        </div>
+        {selectedLanguage && <LanguageModal language={selectedLanguage} onClose={handleCloseModal} />}
       </div>
     </>
   );

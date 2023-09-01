@@ -14,7 +14,7 @@ const Skills = ({ isA4Format }) => {
     let highlightedText = text;
     highlightedWords.forEach((word) => {
       const pattern = new RegExp(`\\b(${word})\\b`, 'gi');
-      highlightedText = highlightedText.replace(pattern, `<strong>${word}</strong>`);
+      highlightedText = highlightedText.replace(pattern, `<strong> ${word} </strong>`);
     });
     return highlightedText;
   };
@@ -55,7 +55,7 @@ const Skills = ({ isA4Format }) => {
         {skillsData.map((skills, index) => (
           <React.Fragment key={index}>
             <div
-              className={`rounded pt-1 ps-2 pe-2 ${styles.skillsDiv} ${
+              className={`${isA4Format ? '':'pt-1'} rounded ps-2 pe-2 ${styles.skillsDiv} ${
                 hoveredSkill === skills.skill ? styles.hovered : ''
               }`}
               onMouseEnter={() => setHoveredSkill(skills.skill)}
@@ -63,7 +63,7 @@ const Skills = ({ isA4Format }) => {
               onClick={() => handleOpenModal(skills)}
             >
               <div className='d-flex justify-content-between align-items-center'>
-                <h6>{skills.skill.toUpperCase()}</h6>
+                <h4>{skills.skill.toUpperCase()}</h4>
               </div>
               {isA4Format ? (
                 <ul>

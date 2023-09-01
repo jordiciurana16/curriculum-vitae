@@ -12,6 +12,7 @@
 .contactLinks {
     position: relative; /* Positions the contact links relative to its normal position in the document flow */
     display: inline-block; /* Displays the contact links as inline block elements */
+    font-size: 0.75rem;
 }
 
 /* Pseudo-element (::before) styles to create an underline animation on hover for contact links */

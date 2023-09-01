@@ -1,5 +1,63 @@
 /*EDUCATION MODULE*/
 
+/* Add black points to the vertical line */
+.verticalLine {
+  margin-left: 7px;
+  border-left: 4px solid #212529;
+  position: relative;
+  height: 98%;
+}
+
+.timeLine{
+  margin-top: 7px;
+}
+
+
+.point {
+  position: absolute;
+  background-color: #212529;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.point.start {
+  top: -0.2%;
+  left: -2px;
+}
+
+.point.middle {
+  top: 34.7%;
+  left: -2px;
+
+}
+
+.point.end {
+  top: 69.8%;
+  left: -2px;
+}
+
+.point.start::before,
+.point.middle::before,
+.point.end::before,
+.point.start::after,
+.point.middle::after,
+.point.end::after {
+  content: '';
+  position: absolute;
+  background-color: white; /* White color for the points */
+  width: 8px; /* Adjust the size of the points as needed */
+  height: 8px; /* Adjust the size of the points as needed */
+  border-radius: 50%;
+  top:25%;
+  transform: translateX(-50%);
+  left: 50%; /* Position the points in the center of the existing black points */
+  z-index: 2; /* Place the white points above the black points */
+}
+
+
 /* Define the base styles for the .educationDiv */
 .educationDiv {
     position: relative;
@@ -8,6 +66,7 @@
     overflow: hidden;
     z-index: 0; /* Set a higher z-index to keep the text above the sliding background */
     transition: background-color 0.3s ease; /* Add a transition for the background-color change on hover */
+    
   }
 
   .a4EducationDiv {
@@ -32,14 +91,12 @@
     z-index: -1; /* Set a lower z-index to place the pseudo-element behind the content */
 }
 
-  /* Add styles on hover to reveal the yellow background from left to right */
-.educationDiv:hover::before {
-    left: 0; /* Reveal the yellow background */
-}
-
-.educationDiv:hover p,
-.educationDiv:hover h6 {
+.educationDiv:hover p {
     font-weight: bold; /* Make the text bold */
-    animation: textGradientAnimation 3s linear infinite; /* Apply the animation to the text gradient */
 }
 
+
+.point.active::before,
+.point.active::after {
+  background-color: #212529; /* Change the background color to red for active points */
+}
