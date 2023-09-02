@@ -19,7 +19,7 @@
       "image": "https://i.ibb.co/R053R4x/meta.png",
       "link": "https://www.coursera.org/professional-certificates/meta-front-end-developer",
       "description": "The Front-End Developer course offered by Meta, on the Coursera educational platform, covers the knowledge needed for a front-end web developer and takes approximately 7 months to complete. It consists of a total of 9 courses designed to cover the knowledge of web programming languages par excellence, with special emphasis on React and the creation of attractive user-centered interfaces.",
-      "introduction": "A total of 9 courses that covers the programming and design knowledge needed for a front-end web developer",
+      "introduction": "A total of 9 courses that covers the programming and design knowledge needed for a front-end web developer.",
       "achievements":["Average grade of the 9 courses of 9.05 out of 10"],
       "knowledge":["HTML", "CSS", "JS", "React", "Object-Oriented Programming", "Figma", "UX", "UI", "Version Control"],
       "highlight": ["7 months to complete", "9 courses", "9.05"]

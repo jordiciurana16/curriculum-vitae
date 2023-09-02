@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css'
 import { BsEnvelopeFill, BsFillTelephoneFill, BsFillGeoAltFill, BsGlobe2 , BsFillClipboardCheckFill} from 'react-icons/bs';
-import foto from '../../../public/foto.png'
+import photo from '../../../public/photo.png'
 
 const Header = ({isA4Format}) => {
   const [copySuccess, setCopySuccess] = useState(false);
@@ -23,7 +23,7 @@ const Header = ({isA4Format}) => {
       <div className='bg-dark d-flex  align-items-center content-padding'>
         <div className={` ${isA4Format ? styles.a4PhotoFrame : styles.photoFrame} rounded-circle`}>
           <img
-            src={foto}
+            src={photo}
             alt="CV Photo"
             className={` ${isA4Format ? styles.a4ImageSize : styles.imageSize} rounded-circle`}
           />

@@ -1,7 +1,5 @@
-// components/ButtonGroup.js
 import React, { useState } from 'react';
 import { BsFileText, BsFileTextFill, BsCloudDownload, BsCloudDownloadFill, BsShare, BsShareFill } from 'react-icons/bs';
-import { saveAs } from 'file-saver'; // Import the saveAs function
 
 const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
   const [hoveredIcon, setHoveredIcon] = useState(null);
@@ -11,13 +9,7 @@ const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
     setHoveredIcon(null);
   };
 
-  const handleDownloadClick = () => {
-    // Replace 'your-pdf-file.pdf' with the actual path to your PDF file.
-    const pdfUrl = `curriculum-vitae/titles/languages/EnglishB2.pdf`;
-
-    // Use the saveAs function to trigger the download.
-    saveAs(pdfUrl, 'downloaded-file.pdf');
-  };
+  const pdfUrl = `https://jordiciurana16.github.io/curriculum-vitae/curriculum-vitae.pdf`;
 
   return (
     <div className={`d-flex justify-content-end mt-2 mb-2`}>
@@ -33,6 +25,19 @@ const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
           <BsFileText className='mx-auto ms-4' />
         )}
       </span>
+      <a
+        className={`fs-3 d-flex align-items-center text-dark`}
+        href={pdfUrl}  // Set the href attribute to the pdfUrl
+        download  // This attribute prompts the user to download the file
+        onMouseEnter={() => setHoveredIcon('download')}
+        onMouseLeave={() => setHoveredIcon(null)}
+      >
+        {hoveredIcon === 'download' ? (
+          <BsCloudDownloadFill className='mx-auto ms-4' />
+        ) : (
+          <BsCloudDownload className='mx-auto ms-4' />
+        )}
+      </a>
       <span
         className={`fs-3 d-flex align-items-center`}
         onMouseEnter={() => setHoveredIcon('share')}
@@ -42,18 +47,6 @@ const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
           <BsShareFill className='mx-auto ms-4' />
         ) : (
           <BsShare className='mx-auto ms-4' />
-        )}
-      </span>
-      <span
-        className={`fs-3 d-flex align-items-center`}
-        onClick={handleDownloadClick} // Handle download on click
-        onMouseEnter={() => setHoveredIcon('download')}
-        onMouseLeave={() => setHoveredIcon(null)}
-      >
-        {hoveredIcon === 'download' ? (
-          <BsCloudDownloadFill className='mx-auto ms-4' />
-        ) : (
-          <BsCloudDownload className='mx-auto ms-4' />
         )}
       </span>
     </div>
