@@ -38,7 +38,7 @@ const Experience = ({ isA4Format }) => { // Add isA4Format as a prop
               />
             </div>
           </a>
-          {index !== experienceData.length - 1 && <hr/>} {/* Conditionally render <hr> */}
+          {index !== experienceData.length - 1 && <hr className={`${isA4Format ? 'a4FormatHr': ''} `}/>}
         </div>
       ))}
     </div>

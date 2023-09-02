@@ -77,7 +77,7 @@ const Education = ({ isA4Format }) => {
                 </React.Fragment>
               )}
             </div>
-      {index !== educationData.length - 1 && <hr />}
+            {index !== educationData.length - 1 && <hr className={`${isA4Format ? 'a4FormatEducation': ''} `}/>}
     </React.Fragment>
   ))}
 </div>

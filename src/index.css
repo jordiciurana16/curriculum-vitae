@@ -84,10 +84,20 @@ h4 {
   font-size: 0.9rem;
 }
 
-.a4-format hr {
-  margin: 5px 0 5px 0; /* top right bottom left */
+.a4FormatHr {
+  margin: -6px  0 1px 0; /* top right bottom left */
 }
 
 .disable-interactions {
   pointer-events: none;
+}
+
+
+.a4FormatEducation {
+  margin: -4px  0 4px 0; /* top right bottom left */
+
+}
+
+footer{
+  padding-top: 200px;
 }

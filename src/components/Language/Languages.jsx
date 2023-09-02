@@ -51,8 +51,8 @@ const Languages = ({ isA4Format }) => {
             // Bootstrap grid columns based on isA4Format
             <div
               className={`${
-                isA4Format ? 'col-6' : 'col-12'
-              } mb-2 ${styles.languagesList}`}
+                isA4Format ? 'col-6 mb-2' : 'col-12 mb-3'
+              }  ${styles.languagesList}`}
               key={index}
               onClick={() => handleLanguageClick(language)}
             >
