@@ -1,7 +1,7 @@
 // components/ButtonGroup.js
 import React, { useState } from 'react';
-import styles from './Buttons.module.css'
-import { BsFileText, BsFileTextFill, BsCloudDownload, BsCloudDownloadFill , BsShare, BsShareFill } from 'react-icons/bs';
+import { BsFileText, BsFileTextFill, BsCloudDownload, BsCloudDownloadFill, BsShare, BsShareFill } from 'react-icons/bs';
+import { saveAs } from 'file-saver'; // Import the saveAs function
 
 const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
   const [hoveredIcon, setHoveredIcon] = useState(null);
@@ -11,8 +11,16 @@ const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
     setHoveredIcon(null);
   };
 
+  const handleDownloadClick = () => {
+    // Replace 'your-pdf-file.pdf' with the actual path to your PDF file.
+    const pdfUrl = `curriculum-vitae/titles/languages/EnglishB2.pdf`;
+
+    // Use the saveAs function to trigger the download.
+    saveAs(pdfUrl, 'downloaded-file.pdf');
+  };
+
   return (
-    <div className={`d-flex justify-content-end mt-2 mb-2 ${styles.buttonGroup}`}>
+    <div className={`d-flex justify-content-end mt-2 mb-2`}>
       <span
         className={`fs-3 d-flex align-items-center`}
         onClick={handleFileClick}
@@ -36,10 +44,13 @@ const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
           <BsShare className='mx-auto ms-4' />
         )}
       </span>
-      <span className={`fs-3 d-flex align-items-center`}
+      <span
+        className={`fs-3 d-flex align-items-center`}
+        onClick={handleDownloadClick} // Handle download on click
         onMouseEnter={() => setHoveredIcon('download')}
-        onMouseLeave={() => setHoveredIcon(null)}>
-      {hoveredIcon === 'download' ? (
+        onMouseLeave={() => setHoveredIcon(null)}
+      >
+        {hoveredIcon === 'download' ? (
           <BsCloudDownloadFill className='mx-auto ms-4' />
         ) : (
           <BsCloudDownload className='mx-auto ms-4' />

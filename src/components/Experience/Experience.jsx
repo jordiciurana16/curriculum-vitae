@@ -5,6 +5,7 @@ import styles from './Experience.module.css';
 
 const Experience = ({ isA4Format }) => { // Add isA4Format as a prop
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [isExpanded, setExpanded] = useState(false);
 
   const highlightWords = (text, highlightedWords, index) => {
     let highlightedText = text;
@@ -18,9 +19,9 @@ const Experience = ({ isA4Format }) => { // Add isA4Format as a prop
   };
 
   return (
-    <div className='mt-2'>
+    <div className='mt-2' onMouseEnter={() => setExpanded(true)} onMouseLeave={() => setExpanded(false)}>
       <h2>EXPERIENCE</h2>
-      <Separator />
+      <Separator expanded={isExpanded}  isA4Format={isA4Format} />
       {experienceData.map((experience, index) => (
         <div
           key={index}

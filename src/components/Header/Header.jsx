@@ -19,8 +19,8 @@ const Header = ({isA4Format}) => {
 
 
   return (
-    <header className={`${isA4Format ? 'pt-4 mt-2' : ''}`}>
-      <div className='bg-dark d-flex pb-1 pt-1  align-items-center content-padding'>
+    <header className={`${isA4Format ? 'pt-4 mt-3' : ''}`}>
+      <div className='bg-dark d-flex  align-items-center content-padding'>
         <div className={` ${isA4Format ? styles.a4PhotoFrame : styles.photoFrame} rounded-circle`}>
           <img
             src={foto}

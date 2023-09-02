@@ -43,7 +43,7 @@ const Education = ({ isA4Format }) => {
 
       <div className='pb-2' onMouseEnter={() => setExpanded(true)} onMouseLeave={() => setExpanded(false)}>
         <h2>EDUCATION</h2>
-        <Separator expanded={isExpanded} />
+        <Separator expanded={isExpanded} isA4Format={isA4Format} />
         <div className='row'>
         <div className={`col-1`}>
   <div className={`bg-primary row ${styles.timeLine}`}></div>

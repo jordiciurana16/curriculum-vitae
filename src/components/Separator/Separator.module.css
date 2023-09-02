@@ -23,3 +23,11 @@
     width: 100%; /* Sets the width to 100%, making the thick line span the entire parent element */
 }
 
+.A4ThickLine {
+    width: 2.2rem; /* Sets the width of the line to 3 rem units */
+    height: 150%; /* Sets the height of the line to 150% of its parent element's height */
+    position: absolute; /* Positions the line relative to its closest positioned ancestor */
+    top: 50%; /* Sets the top position to be centered vertically within its parent element */
+    transform: translate(0, -50%); /* Moves the line upwards by 50% of its own height to vertically center it */
+    transition: 0.5s ease; /* Adds a smooth transition effect over 0.5 seconds */
+}

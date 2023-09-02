@@ -7,7 +7,7 @@ import Experience from './Experience/Experience';
 
 const Main = ({ isA4Format }) => {
   return (
-    <main className={`content-padding mb-3 ${isA4Format ? 'mt-4' : 'mt-5'}`}>
+    <main className={`content-padding mb-4 pb-1 ${isA4Format ? 'mt-4' : 'mt-5'}`}>
       <div className="container">
         <div className="row">
           <div className={`${isA4Format ? 'col-4 pe-3 pt-1' : 'col-5 pe-3'}`}>

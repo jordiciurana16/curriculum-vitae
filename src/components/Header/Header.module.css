@@ -1,9 +1,14 @@
 /*HEADER CSS MODULE*/
 
+img {
+  background-color: #dbdbdb;
+}
+
 /* Styles for the photo frame container */
 .photoFrame {
     display: flex; /* Displays its children elements in a flex container */
     border: 20px solid #ffffff; /* Adds a white border of 20px around the photo frame */
+    background-color: #ffffff;
     margin-top: -30px; /* Moves the photo frame 30px upwards, overlapping the content above it */
     margin-bottom: -30px; /* Moves the photo frame 30px downwards, overlapping the content below it */
 }
@@ -47,16 +52,20 @@
   border: 15px solid #ffffff; /* Adds a white border of 20px around the photo frame */
   margin-top: -30px; /* Moves the photo frame 30px upwards, overlapping the content above it */
   margin-bottom: -30px; /* Moves the photo frame 30px downwards, overlapping the content below it */
+  background-color: #ffffff;
+
+  
 }
 
 .a4ImageSize {
   width: 125px;
   height: 125px;
   object-fit: cover;
+
 }
 
 .imageSize {
   width: 175px;
   height: 175px;
-  object-fit: cover; /* Aquesta propietat assegura que la imatge s'ajusti sense deformar-la. */
+  object-fit: cover;
 }

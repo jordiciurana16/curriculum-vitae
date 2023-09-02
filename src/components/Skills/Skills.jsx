@@ -50,7 +50,7 @@ const Skills = ({ isA4Format }) => {
       {showOverlay && <div className='overlay'></div>}
       <div onMouseEnter={() => setExpanded(true)} onMouseLeave={() => setExpanded(false)}>
         <h2>SKILLS</h2>
-        <Separator expanded={isExpanded} />
+        <Separator expanded={isExpanded} isA4Format={isA4Format}/>
 
         {skillsData.map((skills, index) => (
           <React.Fragment key={index}>

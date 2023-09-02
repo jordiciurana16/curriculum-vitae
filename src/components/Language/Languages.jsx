@@ -43,7 +43,7 @@ const Languages = ({ isA4Format }) => {
 
       <div onMouseEnter={() => setExpanded(true)} onMouseLeave={() => setExpanded(false)}>
         <h2>LANGUAGES</h2>
-        <Separator expanded={isExpanded} />
+        <Separator expanded={isExpanded} isA4Format={isA4Format}/>
 
         {/* Bootstrap grid row */}
         <div className="row">
