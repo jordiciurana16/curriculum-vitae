@@ -23,8 +23,13 @@
     "projects": [
       {
         "title": "Tic Tac Toe Game",
-        "description": "Developed a responsive Tic Tac Toe game for practicing vanilla CSS and JS.",
+        "description": "Developed a Tic Tac Toe game for practicing vanilla HTML, CSS and JS.",
         "link": "https://jordiciurana16.github.io/tic-tac-toe/"
+      },
+      {
+        "title": "Snake Game",
+        "description": "Developed a Snake game for practicing vanilla HTML, CSS and JS.",
+        "link": "https://jordiciurana16.github.io/snake/"
       },
       {
         "title": "Portfolio Website",
