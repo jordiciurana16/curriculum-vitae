@@ -5,14 +5,14 @@
     "highlight": ["Illustrator", "Photoshop", "InDesign", "AfterEffects", "Premiere Pro", "Blender", "Figma"],
     "projects": [
       {
-        "title": "Video Game Review",
-        "description": "Created a review video of Pokémon FireRed for a university subject with Premiere Pro and Photoshop.",
-        "link": "https://www.youtube.com/watch?v=lG1DpaNo_Zw&t=178s"
-      },
-      {
         "title": "Trail T-Shirt Design",
         "description": "Designed and produced a trail running t-shirts for Club Muntanyenc Sant Cugat with Illustrator.",
         "link": "/curriculum-vitae/projects/Disseny%20i%20producció%20de%20la%20samarreta%20tècnica.pdf"
+      },
+      {
+        "title": "Video Game Review",
+        "description": "Created a review video of Pokémon FireRed for a university subject with Premiere Pro and Photoshop.",
+        "link": "https://www.youtube.com/watch?v=lG1DpaNo_Zw&t=178s"
       }
     ]
   },
@@ -28,12 +28,12 @@
       },
       {
         "title": "Portfolio Website",
-        "description": "Designed and coded a personal portfolio website with CSS, JS, Bootstrap and React.",
-        "link": "https://www.youtube.com/watch?v=lG1DpaNo_Zw&t=178s"
+        "description": "Developed this personal portfolio website with CSS, JS, Bootstrap and React.",
+        "link": "https://jordiciurana16.github.io/curriculum-vitae/"
       },
       {
         "title": "Restaurant Website",
-        "description": "Developed a restaurant website to practice React, UI and UX in depth.",
+        "description": "Developed a fictitious restaurant website to practice React, UI and UX in depth.",
         "link": "https://www.youtube.com/watch?v=lG1DpaNo_Zw&t=178s"
       }
     ]
@@ -44,14 +44,9 @@
     "highlight": ["Python", "PHP", "MySql", "Tableau", "Excel"],
     "projects": [
       {
-        "title": "Marketing Data Analysis",
-        "description": "Analyzed marketing data using Python and Tableau, providing valuable insights for optimizing campaigns.",
-        "link": "https://www.youtube.com/watch?v=lG1DpaNo_Zw&t=178s"
-      },
-      {
-        "title": "Database Optimization",
-        "description": "Optimized database performance by implementing efficient indexing and query optimization techniques.",
-        "link": "https://www.youtube.com/watch?v=lG1DpaNo_Zw&t=178s"
+        "title": "No Data Management Projects related yet",
+        "description": ":(",
+        "link": "#"
       }
     ]
   }

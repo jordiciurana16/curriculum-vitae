@@ -25,7 +25,7 @@ const Header = ({isA4Format}) => {
           <img
             src={photo}
             alt="CV Photo"
-            className={` ${isA4Format ? styles.a4ImageSize : styles.imageSize} rounded-circle`}
+            className={` ${isA4Format ? styles.a4ImageSize : styles.imageSize} ${styles.CVimg} rounded-circle`}
           />
         </div>
         <div className="text-center container">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BsFileText, BsFileTextFill, BsCloudDownload, BsCloudDownloadFill, BsShare, BsShareFill } from 'react-icons/bs';
+import { BsFileText, BsFileTextFill, BsCloudDownload, BsCloudDownloadFill } from 'react-icons/bs';
 
 const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
   const [hoveredIcon, setHoveredIcon] = useState(null);
@@ -26,7 +26,7 @@ const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
         )}
       </span>
       <a
-        className={`fs-3 d-flex align-items-center text-dark`}
+        className={`fs-3 me-3 d-flex align-items-center text-dark`}
         href={pdfUrl}  // Set the href attribute to the pdfUrl
         download  // This attribute prompts the user to download the file
         onMouseEnter={() => setHoveredIcon('download')}
@@ -38,17 +38,6 @@ const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
           <BsCloudDownload className='mx-auto ms-4' />
         )}
       </a>
-      <span
-        className={`fs-3 d-flex align-items-center`}
-        onMouseEnter={() => setHoveredIcon('share')}
-        onMouseLeave={() => setHoveredIcon(null)}
-      >
-        {hoveredIcon === 'share' ? (
-          <BsShareFill className='mx-auto ms-4' />
-        ) : (
-          <BsShare className='mx-auto ms-4' />
-        )}
-      </span>
     </div>
   );
 };
