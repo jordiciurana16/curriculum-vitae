@@ -20,7 +20,7 @@ const Header = ({isA4Format}) => {
 
   return (
     <header className={`${isA4Format ? 'pt-4 mt-3' : ''}`}>
-      <div className='bg-dark d-flex  align-items-center content-padding'>
+      <div className='bg-dark pt-1 pb-1 d-flex align-items-center content-padding'>
         <div className={` ${isA4Format ? styles.a4PhotoFrame : styles.photoFrame} rounded-circle`}>
           <img
             src={photo}
@@ -66,7 +66,7 @@ const Header = ({isA4Format}) => {
                     className="text-decoration-none text-white"
                   >
                     <BsGlobe2 className={`${isA4Format ? 'me-1' : 'me-2'}`}/>
-                    www.jordiciurana16.com
+                    www.jordiciurana16.github.io
                   </a>
                 </span>
               </div>
