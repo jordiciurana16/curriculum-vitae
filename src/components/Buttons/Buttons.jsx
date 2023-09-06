@@ -9,7 +9,7 @@ const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
     setHoveredIcon(null);
   };
 
-  const pdfUrl = `https://jordiciurana16.github.io/curriculum-vitae/curriculum-vitae.pdf`;
+  const pdfUrl = `https://jordiciurana16.github.io/curriculum-vitae/curriculum/englishCV.pdf`;
 
   return (
     <div className={`d-flex justify-content-end mt-2 mb-2`}>
@@ -27,8 +27,9 @@ const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
       </span>
       <a
         className={`fs-3 me-3 d-flex align-items-center text-dark`}
-        href={pdfUrl}  // Set the href attribute to the pdfUrl
-        download  // This attribute prompts the user to download the file
+        href={pdfUrl}
+        target="_blank" // Open the link in a new window
+        download
         onMouseEnter={() => setHoveredIcon('download')}
         onMouseLeave={() => setHoveredIcon(null)}
       >

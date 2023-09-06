@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutMe from './AboutMe';
+import AboutMe from './AboutMe/AboutMe';
 import Education from './Education/Education';
 import Languages from './Language/Languages';
 import Skills from './Skills/Skills';
