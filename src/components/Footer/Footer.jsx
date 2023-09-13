@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import { BsInstagram, BsGithub, BsStrava } from 'react-icons/bs';
+import { BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const Footer = ({ isA4Format }) => {
   return (
@@ -12,8 +12,8 @@ const Footer = ({ isA4Format }) => {
               <a href='https://www.instagram.com/jordiciurana16/' target='_blank' className='text-white me-4'>
                 <BsInstagram size={30} />
               </a>
-              <a href='https://www.strava.com/athletes/94208815' target='_blank' className='text-white me-4'>
-                <BsStrava size={30} />
+              <a href='https://www.linkedin.com/in/jordiciurana16/' target='_blank' className='text-white me-4'>
+                <BsLinkedin size={30} />
               </a>
               <a href='https://www.github.com/jordiciurana16' target='_blank' className='text-white'>
                 <BsGithub size={30} />
