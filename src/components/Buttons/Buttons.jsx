@@ -9,7 +9,7 @@ const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
     setHoveredIcon(null);
   };
 
-  const pdfUrl = `https://jordiciurana16.github.io/curriculum-vitae/curriculums/englishCV.pdf`;
+  const pdfUrl = `https://jordiciurana16.github.io/curriculum-vitae/curriculums/compressedEnglishCV.pdf`;
 
   return (
     <div className={`d-flex justify-content-end mt-2 mb-2`}>
