@@ -23,13 +23,13 @@
     "projects": [
       {
         "title": "Tic Tac Toe Game",
-        "description": "Developed a Tic Tac Toe game for practicing vanilla HTML, CSS and JS.",
+        "description": "Developed a Tic Tac Toe game for practising vanilla HTML, CSS and JS.",
         "link": "https://jordiciurana16.github.io/tic-tac-toe/"
       },
       {
         "title": "Snake Game",
-        "description": "Developed a Snake game for practicing vanilla HTML, CSS and JS.",
-        "link": "https://jordiciurana16.github.io/snake/"
+        "description": "Developed a Snake game for practising vanilla HTML, CSS and JS.",
+        "link": "https://jordiciurana16.github.io/snase/"
       },
       {
         "title": "Portfolio Website",
@@ -38,7 +38,7 @@
       },
       {
         "title": "Restaurant Website",
-        "description": "Developed a fictitious restaurant website to practice React, UI and UX in depth.",
+        "description": "Developed a fictitious restaurant website for practising React, UI and UX in depth.",
         "link": "https://jordiciurana16.github.io/little-lemon/"
       }
     ]
