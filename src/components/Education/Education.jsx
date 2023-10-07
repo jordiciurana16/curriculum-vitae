@@ -45,15 +45,15 @@ const Education = ({ isA4Format }) => {
         <h2>EDUCATION</h2>
         <Separator expanded={isExpanded} isA4Format={isA4Format} />
         <div className='row'>
-        <div className={`col-1`}>
-  <div className={`bg-primary row ${styles.timeLine}`}></div>
-  <div className={`${styles.verticalLine} ps-2`}>
-    {/* Add the black points */}
-    <div className={`${styles.point} ${styles.start} ${hoveredObject === educationData[0] ? styles.active : ''}`}></div>
-    <div className={`${styles.point} ${styles.middle} ${hoveredObject === educationData[1] ? styles.active : ''}`}></div>
-    <div className={`${styles.point} ${styles.end} ${hoveredObject === educationData[2] ? styles.active : ''}`}></div>
-  </div>
-</div>
+        <div className={`col-1 d-none d-sm-block`}>
+          <div className={` row ${styles.timeLine}`}></div>
+          <div className={`${styles.verticalLine} ps-2`}>
+            {/* Add the black points */}
+            <div className={`${styles.point} ${styles.start} ${hoveredObject === educationData[0] ? styles.active : ''}`}></div>
+            <div className={`${styles.point} ${styles.middle} ${hoveredObject === educationData[1] ? styles.active : ''}`}></div>
+            <div className={`${styles.point} ${styles.end} ${hoveredObject === educationData[2] ? styles.active : ''}`}></div>
+          </div>
+        </div>
 <div className="col-11">
   {educationData.map((education, index) => (
     <React.Fragment key={index}>

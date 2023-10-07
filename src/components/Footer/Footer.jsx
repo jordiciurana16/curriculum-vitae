@@ -4,8 +4,8 @@ import { BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const Footer = ({ isA4Format }) => {
   return (
-    <footer className={`bg-dark  ${isA4Format ? ' py-5 ' : 'mt-5 py-4'} `}>
-      <div className='content-padding text-white'>
+    <footer className={`bg-dark ${isA4Format ? ' py-5 ' : 'mt-5 py-4'} `}>
+      <div className='text-white container'>
         <div className={`${styles.socialIcons} d-flex justify-content-end`}>
           {!isA4Format && (
             <>

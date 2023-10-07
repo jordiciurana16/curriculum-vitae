@@ -12,7 +12,7 @@ const ButtonGroup = ({ isA4Format, setIsA4Format }) => {
   const pdfUrl = `https://jordiciurana16.github.io/curriculum-vitae/curriculums/compressedEnglishCV.pdf`;
 
   return (
-    <div className={`d-flex justify-content-end mt-2 mb-2`}>
+    <div className={`container d-flex justify-content-end mt-2 mb-2`}>
       <span
         className={`fs-3 d-flex align-items-center`}
         onClick={handleFileClick}
