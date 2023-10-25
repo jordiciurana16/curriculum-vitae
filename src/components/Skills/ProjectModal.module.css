@@ -31,3 +31,7 @@
     text-decoration: underline;
   }
   
+  .projectList{
+    overflow-y: auto; /* Adds a vertical scrollbar if the content overflows vertically */
+
+  }

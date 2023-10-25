@@ -35,7 +35,7 @@ const LanguageModal = ({ language, onClose }) => {
           <BsX className={styles.closeModal}/>
         </div>
       </div>
-      <div className='card-body'>
+      <div className={`card-body ${styles.languageBody}`}>
         <p dangerouslySetInnerHTML={{ __html: highlightWords(language.description, language.highlight) }} />
       </div>
       <div className='card-footer d-flex justify-content-between'>

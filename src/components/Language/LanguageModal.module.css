@@ -13,6 +13,10 @@
   height: 45%; /* Sets the height of the modal to 45% of its parent element's height */
 }
 
+.languageBody{
+  overflow-y: auto; /* Adds a vertical scrollbar if the content overflows vertically */
+}
+
 /* Cross icon for closing the modal */
 .closeModal {
   cursor: pointer; /* Changes the cursor to indicate it's clickable */
