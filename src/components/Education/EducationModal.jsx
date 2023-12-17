@@ -23,7 +23,7 @@ const EducationModal = ({ education, onClose }) => {
     return highlightedAchievements;
   };
 
-  const pdfUrl = `curriculum-vitae/titles/education/${education.degree}.pdf`;
+  const pdfUrl = `https://jordiciurana16.github.io/curriculum-vitae/titles/education/${education.degree}.pdf`;
 
   return (
     <div className={`${styles.languageModal} card`}>
