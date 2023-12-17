@@ -49,9 +49,9 @@
     "highlight": ["Python", "PHP", "MySql", "Tableau", "Excel"],
     "projects": [
       {
-        "title": "No Data Management Projects related yet",
-        "description": ":(",
-        "link": "#"
+        "title": "Restaurant website",
+        "description": "Developed a fictitious restaurant website for practising Object-Oriented Programming through JSON. ",
+        "link": "https://jordiciurana16.github.io/little-lemon/"
       }
     ]
   }
