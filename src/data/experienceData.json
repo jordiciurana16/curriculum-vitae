@@ -1,9 +1,9 @@
 [
-    {   "company": "Fonda Cal Fuxet",
-        "description":"In summer and winter holidays I work in a small, rural inn in Arànser, Cerdanya, where the restaurant and accommodation service is provided. I work as a waiter, cook and receptionist for customer accommodation.",
-        "introduction":"Inn with restaurant and accomodation service provided. I worked as a waiter, cook, and receptionist.",
-        "link": "https://calfuxet.com/",
-        "highlight": ["waiter", "cook", "receptionist"]
+    {   "company": "La Tempesta",
+        "description":"Digital studio working in strategic consulting services, promotion of digital transformation and production of web projects and digital cultural heritage. I have mainly worked on 2D animation, UX design, and information architecture.",
+        "introduction": "Digital cultural heritage studio. I have mainly worked on 2D animation, UX design, and information architecture.",
+        "link": "https://latempesta.cc/",
+        "highlight": ["2D animation", "UX design", "information architecture"]
     },
     {
         "company": "Editoral Símbol Editors",
