@@ -14,7 +14,7 @@ const Skills = ({ isA4Format }) => {
     let highlightedText = text;
     highlightedWords.forEach((word) => {
       const pattern = new RegExp(`\\b(${word})\\b`, 'gi');
-      highlightedText = highlightedText.replace(pattern, `<strong> ${word} </strong>`);
+      highlightedText = highlightedText.replace(pattern, `<strong>${word}</strong>`);
     });
     return highlightedText;
   };

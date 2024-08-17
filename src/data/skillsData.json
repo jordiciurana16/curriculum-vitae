@@ -18,8 +18,8 @@
   },
   {
     "skill": "Front-End Developement",
-    "description": "Deep understanding of the front-end web development landscape. Proficient in HTML, CSS, JavaScript, and various front-end frameworks such as Bootstrap and React. Passionate about creating an exceptional UX through innovative and UI web applications, coupled with a keen eye for design aesthetics.",
-    "highlight": ["HTML", "CSS", "JavaScript", "Bootstrap", "React", "UX", "UI" ],
+    "description": "Deep understanding of the front-end web development landscape. Proficient in HTML, CSS, JavaScript, and front-end frameworks like Bootstrap and React. Skilled in WordPress development. Passionate about creating exceptional UX and innovative UI web applications, with a keen eye for design aesthetics.",
+    "highlight": ["HTML", "CSS", "JavaScript", "Bootstrap", "React", "UX", "UI", "WordPress" ],
     "projects": [
       {
         "title": "Tic Tac Toe Game",

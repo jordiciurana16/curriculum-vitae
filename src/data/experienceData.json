@@ -1,22 +1,27 @@
 [
-    {   "company": "La Tempesta",
-        "description":"Digital studio working in strategic consulting services, promotion of digital transformation and production of web projects and digital cultural heritage. I have mainly worked on 2D animation, UX design, and information architecture.",
-        "introduction": "Digital cultural heritage studio. I have mainly worked on 2D animation, UX design, and information architecture.",
-        "link": "https://latempesta.cc/",
-        "highlight": ["2D animation", "UX design", "information architecture"]
+    {
+      "company": "La Tempesta",
+      "description": "Digital studio working in strategic consulting services, promotion of digital transformation and production of web projects and digital cultural heritage. I have mainly worked on web front-end development, UX design, information architecture and 2D animation.",
+      "introduction": "Digital cultural heritage studio. I have mainly worked on web front-end development, UX design, information architecture and 2D animation.",
+      "link": "https://latempesta.cc/",
+      "highlight": ["web front-end development", "2D animation", "UX design", "information architecture"],
+      "date": "February 2023 - September 2024"
     },
     {
-        "company": "Editoral Símbol Editors",
-        "description": "Publishing company owned by my family. Ever since I have consciousness I have been in contact with literature and narrative. During these years, I have done translation, sales, transcription and layout of books.",
-        "introduction":"Publishing company owned by my family. I have done translations, sales, transcriptions and layouts of books.",
-        "link": "https://simboleditors.cat/",
-        "highlight": ["translation", "sales", "transcription", "layout"]
+      "company": "Editoral Símbol Editors",
+      "description": "Publishing company owned by my family. Ever since I have consciousness I have been in contact with literature and narrative. During these years, I have done translation, sales, transcription and layout of books.",
+      "introduction": "Publishing company owned by my family. I have done translations, sales, transcriptions and layouts of books.",
+      "link": "https://simboleditors.cat/",
+      "highlight": ["translation", "sales", "transcription", "layout"],
+      "date": "March 2020 - January 2023"
     },
     {
-        "company": "Cadí Rollers",
-        "description": "Roller ski race in which I am social media manager and creator of audiovisual content in order to promote it. I am currently working on the creation of the brand identity and web page for the race.",
-        "introduction":"Roller ski race in which I am social media manager and creator of audiovisual content in order to promote it.",
-        "link": "https://www.instagram.com/cadirollers/",
-        "highlight": ["social media","audiovisual content", "brand identity", "web page"]
+      "company": "Cadí Rollers",
+      "description": "Roller ski race in which I am social media manager and creator of audiovisual content in order to promote it. I am currently working on the creation of the brand identity and web page for the race.",
+      "introduction": "Roller ski race in which I am social media manager and creator of audiovisual content in order to promote it.",
+      "link": "https://www.instagram.com/cadirollers/",
+      "highlight": ["social media", "audiovisual content", "brand identity", "web page"],
+      "date": "June 2022 - Present"
     }
-]
+  ]
+  

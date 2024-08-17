@@ -21,7 +21,7 @@ const Experience = ({ isA4Format }) => { // Add isA4Format as a prop
   return (
     <div className='mt-2' onMouseEnter={() => setExpanded(true)} onMouseLeave={() => setExpanded(false)}>
       <h2>EXPERIENCE</h2>
-      <Separator expanded={isExpanded}  isA4Format={isA4Format} />
+      <Separator expanded={isExpanded} isA4Format={isA4Format} />
       {experienceData.map((experience, index) => (
         <div
           key={index}
@@ -30,7 +30,10 @@ const Experience = ({ isA4Format }) => { // Add isA4Format as a prop
         >
           <a href={experience.link} target='_blank' className='text-black text-decoration-none'>
             <div className={` ${styles.experienceItem} pt-1 ps-2 rounded `}>
-              <h6>{experience.company}</h6>
+              <div className='d-flex justify-content-between align-items-center'>
+                <h6>{experience.company}</h6>
+                <span className={`d-none d-md-inline me-2 ${styles.date}`}>{experience.date}</span>
+              </div>
               <p
                 className='mt-2'
                 dangerouslySetInnerHTML={{
@@ -39,7 +42,7 @@ const Experience = ({ isA4Format }) => { // Add isA4Format as a prop
               />
             </div>
           </a>
-          {index !== experienceData.length - 1 && <hr className={`${isA4Format ? 'a4FormatHr': ''} `}/>}
+          {index !== experienceData.length - 1 && <hr className={`${isA4Format ? 'a4FormatHr' : ''} `} />}
         </div>
       ))}
     </div>
