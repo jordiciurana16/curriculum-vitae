@@ -11,35 +11,35 @@
       "description": "Developed an application with React and WebGL of a modeled 3D interactive room with Blender.",
       "image": "/curriculum-vitae/src/assets/room.svg",
       "technologies": ["React", "WebGL", "Blender"],
-      "url": "https://jordiciurana16.github.io/Interactive-3D-Room/"
+      "url": "/curriculum-vitae/projects/assets/room.svg"
     },
     {
       "title": "Vitora",
       "description": "Final degree work of a prospective life expectancy estimation application developed with React and MySql.",
       "image": "/curriculum-vitae/src/assets/vitora.svg",
       "technologies": ["React", "MySql"],
-      "url": "https://jordiciurana16.github.io/vitora/"
+      "url": "/curriculum-vitae/projects/assets/vitora.svg"
     },
     {
     "title": "Pokémon FireRed Video",
     "description": "Created a review video of Pokémon FireRed for a university subject using Premiere Pro and Photoshop.",
     "image": "/curriculum-vitae/src/assets/pokeball.svg",
     "technologies": ["Premiere Pro", "Photoshop"],
-    "url": "https://www.youtube.com/watch?v=lG1DpaNo_Zw"
-    },
+    "url": "/curriculum-vitae/projects/assets/pokeball.svg"
+  },
     {
     "title": "Little Lemon",
     "description": "Developed a fictitious restaurant website with React to practice design with Figma and statical data management with JSON.",
     "image": "/curriculum-vitae/src/assets/little.lemon.svg",
     "technologies": ["Figma", "React", "JSON"],
-    "url": "https://jordiciurana16.github.io/little-lemon/"
-    },
+    "url": "/curriculum-vitae/projects/assets/little.lemon.svg"
+  },
     {
     "title": "Interactive Curriculum",
     "description": "Developed this personal interactive curriculum with React.",
     "image": "/curriculum-vitae/src/assets/portfolio.svg",
     "technologies": ["React"],
-    "url": "https://jordiciurana16.github.io/curriculum-vitae/"
-    }
+    "url": "/curriculum-vitae/projects/assets/curriculum.svg"
+  }
   ]
   
