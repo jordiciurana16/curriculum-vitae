@@ -4,6 +4,8 @@ import Education from './Education/Education';
 import Languages from './Language/Languages';
 import Skills from './Skills/Skills';
 import Experience from './Experience/Experience';
+import Projects from './Projects/Projects';
+
 
 const Main = ({ isA4Format }) => {
   return (
@@ -18,6 +20,7 @@ const Main = ({ isA4Format }) => {
               <>
                 <Education />
                 <Languages isA4Format={isA4Format} />
+                <Projects />
               </>
             )}
           </div>

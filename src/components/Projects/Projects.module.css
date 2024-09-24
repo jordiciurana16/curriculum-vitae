@@ -1,0 +1,21 @@
+/* ProjectModal.module.css */
+.projectsModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 70%;
+  height: 70%;
+  overflow-y: auto; /* Per fer scroll si el contingut és massa gran */
+}
+
+.closeModal {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.closeModal:hover {
+  transform: scale(1.2);
+}
+

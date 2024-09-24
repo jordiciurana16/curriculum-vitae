@@ -1,7 +1,6 @@
 /* SkillsComponent.module.css */
 .skillsDiv {
     position: relative;
-    cursor: pointer;
     background: white;
     overflow: hidden;
     z-index: 0;
@@ -13,7 +12,6 @@
   
   .skillsDiv:hover {
     background-color: #f2f2f2; /* Change the background color on hover */
-    cursor: pointer;
   }
   
   /* Add styles for the hovered state */

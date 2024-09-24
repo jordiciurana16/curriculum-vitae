@@ -35,3 +35,54 @@
     overflow-y: auto; /* Adds a vertical scrollbar if the content overflows vertically */
 
   }
+
+  .projectList li{
+    transition: background-color 0.5s; /* Transició de 2 segons per al canvi de color */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .projectList li:hover {    background-color: #f2f2f2f2 !important; /* Color de fons gris clar al fer hover */
+    cursor: pointer;
+  }
+  
+  /* ProjectModal.module.css */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Capa opaca de color negre */
+  z-index: 1040; /* Z-index per assegurar que està per sobre de la resta del contingut */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsModal {
+  z-index: 1050; /* Un z-index més alt per estar per sobre de l'overlay */
+  width: 70%;
+  height: 70%;
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.closeModal {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.closeModal:hover {
+  transform: scale(1.2);
+}
+
+.projectList img {
+  max-width: 15%;  /* Ajusta la mida de la imatge relativa al contenidor */
+  max-height: 15%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Manté les proporcions */
+}
