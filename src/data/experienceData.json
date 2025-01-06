@@ -1,27 +1,29 @@
 [
-    {
-      "company": "La Tempesta",
-      "description": "Digital studio working in strategic consulting services, promotion of digital transformation and production of web projects and digital cultural heritage. I have mainly worked on web front-end development, UX design, information architecture and 2D animation.",
-      "introduction": "Digital cultural heritage studio. I have mainly worked on web front-end development, UX design, information architecture and 2D animation.",
-      "link": "https://latempesta.cc/",
-      "highlight": ["web front-end development", "2D animation", "UX design", "information architecture"],
-      "date": "February 2024 - September 2024"
-    },
-    {
-      "company": "Editoral Símbol Editors",
-      "description": "Publishing company owned by my family. Ever since I have consciousness I have been in contact with literature and narrative. During these years, I have done translation, sales, transcription and layout of books.",
-      "introduction": "Publishing company owned by my family. I have done translations, sales, transcriptions and layouts of books.",
-      "link": "https://simboleditors.cat/",
-      "highlight": ["translation", "sales", "transcription", "layout"],
-      "date": "March 2020 - January 2023"
-    },
-    {
-      "company": "Club Muntanyenc Sant Cugat",
-      "description": "Trail running coach where I plan and lead training sessions, manage the club's social media, design the team's kit, and create orientation map layouts.",
-      "introduction": "Trail running coach. I plan and lead training sessions, manage the club's social media, design the team’s kit, and create orientation map layouts.",
-      "link": "https://www.cmsc.cat/",
-      "highlight": ["social media", "map layouts", "training sessions"],
-      "date": "September 2024 - Present"
-    }
-  ]
-  
+  {
+    "company": "Innovamat",
+    "description": "A company that provides an educational service to schools for learning mathematics. Frontend web development with React, integrating APIs and working under an Agile methodology alongside a multidisciplinary team.",
+    "introduction": "Frontend web development with React, integrating APIs and working under an Agile methodology alongside a multidisciplinary team.",
+    "link": "https://innovamat.com/",
+    "highlight": ["web development", "Agile methodology"],
+    "date": "(Oct 2024 - Jan 2025)",
+    "positions": "Frontend Developer"
+  },
+  {
+    "company": "La Tempesta",
+    "description": "A company dedicated to promoting digital transformation, developing web projects, and preserving digital cultural heritage. Responsible for the design and development of user experiences, as well as the creation of visual content and 2D animations, using tools such as Figma and Adobe Creative Cloud.",
+    "introduction": "Responsible for the design and development of user experiences, as well as the creation of visual content and 2D animations, using tools such as Figma and Adobe Creative Cloud.",
+    "link": "https://latempesta.cc/",
+    "highlight": ["user experiences", " animations", "visual content"],
+    "date": "(Feb 2024 - Sep 2024)",
+    "positions": "UX Engineer"
+  },
+  {
+    "company": "Club Muntanyenc",
+    "description": "Trail running coach where I plan and lead training sessions, manage the club's social media, design the team's kit, and create orientation map layouts.",
+    "introduction": "Trail running coach. I plan and lead training sessions, manage the club's social media, design the team’s kit, and create orientation map layouts.",
+    "link": "https://www.cmsc.cat/",
+    "highlight": ["social media", "map layouts", "training sessions"],
+    "date": "(Sep 2024 - Present)",
+    "positions": "Trail Running Coach"
+  }
+]

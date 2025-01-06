@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import Separator from '../Separator/Separator';
-import experienceData from '../../data/experienceData.json';
-import styles from './Experience.module.css';
+import React, { useState } from "react";
+import Separator from "../Separator/Separator";
+import experienceData from "../../data/experienceData.json";
+import styles from "./Experience.module.css";
 
-const Experience = ({ isA4Format }) => { // Add isA4Format as a prop
+const Experience = ({ isA4Format }) => {
+  // Add isA4Format as a prop
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isExpanded, setExpanded] = useState(false);
 
@@ -11,15 +12,22 @@ const Experience = ({ isA4Format }) => { // Add isA4Format as a prop
     let highlightedText = text;
     if (index === hoveredIndex) {
       highlightedWords.forEach((word) => {
-        const pattern = new RegExp(`\\b(${word})\\b`, 'gi');
-        highlightedText = highlightedText.replace(pattern, `<strong> ${word} </strong>`);
+        const pattern = new RegExp(`\\b(${word})\\b`, "gi");
+        highlightedText = highlightedText.replace(
+          pattern,
+          `<strong> ${word} </strong>`
+        );
       });
     }
     return highlightedText;
   };
 
   return (
-    <div className='mt-2' onMouseEnter={() => setExpanded(true)} onMouseLeave={() => setExpanded(false)}>
+    <div
+      className="mt-2"
+      onMouseEnter={() => setExpanded(true)}
+      onMouseLeave={() => setExpanded(false)}
+    >
       <h2>EXPERIENCE</h2>
       <Separator expanded={isExpanded} isA4Format={isA4Format} />
       {experienceData.map((experience, index) => (
@@ -28,21 +36,46 @@ const Experience = ({ isA4Format }) => { // Add isA4Format as a prop
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <a href={experience.link} target='_blank' className='text-black text-decoration-none'>
+          <a
+            href={experience.link}
+            target="_blank"
+            className="text-black text-decoration-none"
+          >
             <div className={` ${styles.experienceItem} pt-1 ps-2 rounded `}>
-              <div className='d-flex justify-content-between align-items-center'>
-                <h6>{experience.company}</h6>
-                <span className={`d-none d-md-inline me-2 ${styles.date}`}>{experience.date}</span>
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex align-items-center">
+                  <h6>
+                    {experience.positions} -{" "}
+                    <span className={styles.company}>{experience.company}</span>
+                  </h6>
+                </div>
+                {!isA4Format && (
+                  <span className={`d-none d-md-inline me-2 ${styles.date}`}>
+                    {experience.date}
+                  </span>
+                )}
               </div>
               <p
-                className='mt-2'
+                className="mt-2"
                 dangerouslySetInnerHTML={{
-                  __html: isA4Format ? highlightWords(experience.introduction, experience.highlight, index) : highlightWords(experience.description, experience.highlight, index),
+                  __html: isA4Format
+                    ? highlightWords(
+                        experience.introduction,
+                        experience.highlight,
+                        index
+                      )
+                    : highlightWords(
+                        experience.description,
+                        experience.highlight,
+                        index
+                      ),
                 }}
               />
             </div>
           </a>
-          {index !== experienceData.length - 1 && <hr className={`${isA4Format ? 'a4FormatHr' : ''} `} />}
+          {index !== experienceData.length - 1 && (
+            <hr className={`${isA4Format ? "a4FormatHr" : ""} `} />
+          )}
         </div>
       ))}
     </div>
