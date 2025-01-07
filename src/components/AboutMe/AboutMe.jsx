@@ -15,8 +15,8 @@ const AboutMe = ({ isA4Format }) => {
       <p className={`text justify`}>
         I define myself as a creative, proactive and curious person. I am
         passionate about creating experiences that connect with people, using a
-        blend of programming techniques and graphic design. I am eager to learn
-        and work on what I am passionate about.
+        blend of programming techniques and graphic design. I am eager to work
+        and continue learning in areas that motivate and challenge me.
       </p>
     </div>
   );
