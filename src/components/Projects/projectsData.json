@@ -28,13 +28,6 @@
     "url": "https://www.youtube.com/watch?v=lG1DpaNo_Zw"
     },
     {
-    "title": "Little Lemon",
-    "description": "Developed a fictitious restaurant website with React to practice design with Figma and statical data management with JSON.",
-    "image": "/curriculum-vitae/assets/little.lemon.svg",
-    "technologies": ["Figma", "React", "JSON"],
-    "url": "https://jordiciurana16.github.io/little-lemon/"
-    },
-    {
     "title": "Interactive Curriculum",
     "description": "Developed this personal interactive curriculum with React.",
     "image": "/curriculum-vitae/assets/portfolio.svg",
